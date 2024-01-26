@@ -1,7 +1,7 @@
-<script lang="ts">
+<script setup lang="ts">
 import type { HeroIconData } from "./Interfaces.ts";
 
-export function getHeroIcon(): Map<number, HeroIconData> {
+function getHeroIcon(): Map<number, HeroIconData> {
   const heroIconList = new Map<number, HeroIconData>();
   // DQ1ヒーロー
   heroIconList.set(11, { heroId: 11, series: 1, name: "DQ1勇者", src: "./image/icon/hero-1-1.png" });

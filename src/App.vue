@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {ref} from "vue";
-import {getHeroIcon} from "./components/GetHeroIcon.vue";
-import {getHeroTalk} from "./components/GetHeroTalk.vue";
+import GetHeroIcon from "./components/GetHeroIcon.vue";
+import GetHeroTalk from "./components/GetHeroTalk.vue";
 import HeroInfo from "./components/HeroInfo.vue";
 import type {HeroIconData, HeroTalkData} from "./components/Interfaces.ts";
 
@@ -12,9 +12,9 @@ const heroId = ref(11);
 // ヒーローアイコン一覧の取得
 const heroIconListInit = new Map<number, HeroIconData>();
 const heroIconList = ref(heroIconListInit);
-heroIconList.value = getHeroIcon();
+heroIconList.value = GetHeroIcon.getHeroIcon();
 // ヒーロートーク一覧の取得
-const heroTalkList: Map<number, HeroTalkData> = getHeroTalk();
+const heroTalkList: Map<number, HeroTalkData> = GetHeroTalk.getHeroTalk();
 // ヒーロートークデータの取得
 const heroTalkDataInit = heroTalkList.get(heroId.value) as HeroTalkData;
 const heroTalkData = ref(heroTalkDataInit);
