@@ -1,8 +1,6 @@
-<script setup lang="ts">
-import { ref } from "vue";
-import type { HeroTalkData } from "./Interfaces.ts";
+import type { HeroTalkData } from "./Interfaces.js";
 
-function getHeroTalk(): Map<number, HeroTalkData> {
+export function getHeroTalk(): Map<number, HeroTalkData> {
   const heroTalkList = new Map<number, HeroTalkData>();
   // DQ1ヒーロー
   heroTalkList.set(11, { heroId: 11, name: "DQ1勇者", src: "./image/talk/heroTalk-1-1.PNG" });
@@ -55,4 +53,3 @@ function getHeroTalk(): Map<number, HeroTalkData> {
 
   return heroTalkList;
 }
-</script>
