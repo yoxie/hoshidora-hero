@@ -55,6 +55,7 @@ const onChangeHero = (chnageHeroId: number): void => {
     position: absolute;
     top: 0px;
     left: 10px;
+    overflow: scroll;
   }
 </style>
 ./components/GetHeroIcon.ts./components/GetHeroTalk.js/index.js
