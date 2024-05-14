@@ -124,12 +124,9 @@ const onChangeHero = (): void => {
 }
 
 .hero {
-  flex: 1;
-  min-height: 100px;
+  flex: 1
   width: 100%;
   text-align: center;
-  margin-top: 80px;
-  margin-left: 100px;
   padding-top: 10px;
   background-color: white
 }
