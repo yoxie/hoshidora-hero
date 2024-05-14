@@ -49,7 +49,7 @@ const onChangeHero = (chnageHeroId: number): void => {
 <style>
   body {
     min-height: 40vh;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: absolute;
