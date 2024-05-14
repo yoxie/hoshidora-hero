@@ -126,7 +126,7 @@ const onChangeHero = (): void => {
 .hero {
   flex: 1;
   min-height: 100px;
-
+  width: 100%;
   text-align: center;
   margin-top: 80px;
   margin-left: 100px;
@@ -153,9 +153,12 @@ input[type="radio"]:checked+img {
 .talk {
   width: 100%;
   height: 100%;
+  margin-top: 100px;
 }
 
 .note {
   font-size: 10px;
+  margin-top: 80px;
+  width: 100%;
 }
 </style>
