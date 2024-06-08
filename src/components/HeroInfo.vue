@@ -124,11 +124,11 @@ const onChangeHero = (): void => {
 }
 
 .hero {
-  flex: 1
+  flex: 1;
   width: 100%;
   text-align: center;
   padding-top: 10px;
-  background-color: white
+  background-color: white;
 }
 
 .radioNone {
